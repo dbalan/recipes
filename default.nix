@@ -16,6 +16,7 @@ pkgs.haskellPackages.developPackage {
         cabal-install
         ghcid
         zlib
+        pkgs.entr
         # install hoogle files for packages we use.
         #(hoogleLocal {packages = drv.propagatedBuildInputs;})
       ]);

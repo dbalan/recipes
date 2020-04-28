@@ -10,6 +10,7 @@ import Data.Yaml
 data Recipe = Recipe
   { title :: String
   , description :: String
+  , image :: Maybe String
   , source :: String
   , ingredients :: ![RecipeIngredient]
   , categories :: ![String]
@@ -42,6 +43,7 @@ instance FromJSON Recipe where
   parseJSON = withObject "recipe" $ \o -> do
     title <- o .: "title"
     description <- o .: "description"
+    image <- o .:? "image"
     source <- o .: "source"
     ingredients <- o .: "ingredients"
     categories <- o .: "categories"

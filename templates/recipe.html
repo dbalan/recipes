@@ -1,30 +1,43 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>$title$</title>
     <style type="text/css">
-      body{margin:40px auto;
-	   max-width:650px;
-	   line-height:1.6;
-	   font-size:18px;
-	   color:#444;
-	   padding:0 10px}
-      h1,h2,h3{line-height:1.2}
-  </style>
+      body { margin:40px auto;
+	     max-width:650px;
+	     line-height:1.6;
+	     font-size:18px;
+	     color:#444;
+	     padding:0 10px
+	   }
+      h1,h2,h3{
+	  line-height:1.2
+      }
+
+      td, th {
+	  border: 1px  #999;
+	  padding: 0.5 rem;
+	  padding-left: 0.4rem;
+	  text-align: left;
+      }
+    </style>
   </head>
-<article class="group">
-  <h1>$title$</h1>
-    $if(categories)$
+  <body>
+    <h1>$title$</h1>
+       $if(categories)$
     <div id="tags">Posted in $tags$</div>
     $endif$
-</div>
-<div id="desc">
-  $desc$
-</div>
-<div id="source"><a href=$source$>$source$</a></div>
-<section>
-  $body$
-</section>
+    $desc$
+    <br>
+    source: <a href=$source$>$source$</a></div>
+    <br>
+    $if(image)$
+    <div id="picture"><img src="/pictures/$image$" style="width:auto;"></div>
+    $endif$
+    $body$
+</html>
 
-</article>
