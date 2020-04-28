@@ -12,7 +12,9 @@ import Recipes.RecipeCompiler
 
 config :: Configuration
 config = defaultConfiguration
-  { destinationDirectory = "public" }
+  { destinationDirectory = "public"
+   , deployCommand = "rsync -vrP public/ www:/usr/local/www/nginx/recipes/"
+  }
 
 recipeRoute :: Routes
 recipeRoute = customRoute rr
@@ -31,6 +33,10 @@ startApp = hakyllWith config $ do
     compile recipeCompiler
 
   match "templates/*" $ compile templateBodyCompiler
+  match "css/*" $ do
+    route idRoute
+    compile copyFileCompiler
+
   match "index.html" $ do
     route idRoute
     compile $ do

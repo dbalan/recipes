@@ -7,6 +7,8 @@ module Recipes.Types where
 import Data.String.Interpolate
 import Data.Yaml
 
+import Recipes.Utils
+
 data Recipe = Recipe
   { title :: String
   , description :: String
@@ -56,7 +58,7 @@ class Render a where
   render :: a -> String
 
 instance Render RecipeIngredient where
-  render ins = name ins <> prep'
+  render ins = camelCase (name ins) <> prep'
     where
       prep' = case prep ins of
                 Nothing -> ""
@@ -64,7 +66,7 @@ instance Render RecipeIngredient where
 
 instance Render Instruction where
   render ins =
-    [i|<h3>#{instructionName ins}</h3>
+    [i|<h3>#{camelCase $ instructionName ins}</h3>
        #{s}\n|]
       where
-        s = concat $ map ("<p>"<>) (lines (steps ins))
+        s = concat $ map (("<p>"<>).camelCase) (lines (steps ins))

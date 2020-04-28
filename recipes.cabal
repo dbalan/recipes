@@ -19,6 +19,7 @@ library
   exposed-modules:     Recipes.Types
                      , Recipes.Compiler
                      , Recipes.RecipeCompiler
+                     , Recipes.Utils
   build-depends:       base >= 4.7 && < 5
                      , text
                      , yaml
