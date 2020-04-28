@@ -34,7 +34,6 @@ fromRecipe r = optionalField "notes" (notes r)
                <> constField "title" (title r)
                <> constField "source" (source r)
                <> constField "desc" (description r)
-               <> constField "notes" (noteli')
                <> constField "body" (renderBody r)
 
 optionalField :: String -> Maybe String -> Context String

@@ -65,4 +65,6 @@ instance Render RecipeIngredient where
 instance Render Instruction where
   render ins =
     [i|<h3>#{instructionName ins}</h3>
-       #{steps ins}\n|]
+       #{s}\n|]
+      where
+        s = concat $ map ("<p>"<>) (lines (steps ins))

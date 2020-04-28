@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Recipes</title>
+    <style type="text/css">
+      body { margin:40px auto;
+	     max-width:650px;
+	     line-height:1.6;
+	     font-size:18px;
+	     color:#444;
+	     padding:0 10px
+	   }
+      h1,h2,h3{
+	  line-height:1.2
+      }
+
+      td, th {
+	  border: 1px  #999;
+	  padding: 0.5 rem;
+	  padding-left: 0.4rem;
+	  text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Recipes</h1>
+    <ul>
+     $for(posts)$
+      <li><a href="/recipes/$title$.html">$title$</a></li>
+    $endfor$
+</html>
+

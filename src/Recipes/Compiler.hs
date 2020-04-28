@@ -31,3 +31,12 @@ startApp = hakyllWith config $ do
     compile recipeCompiler
 
   match "templates/*" $ compile templateBodyCompiler
+  match "index.html" $ do
+    route idRoute
+    compile $ do
+      posts <- loadAll "recipes/*"
+      let indexCtx =
+            listField "posts" defaultContext (return posts) <> defaultContext
+      makeItem ""
+        >>= loadAndApplyTemplate "templates/index.html" indexCtx
+        >>= relativizeUrls

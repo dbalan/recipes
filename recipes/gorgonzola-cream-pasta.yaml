@@ -1,0 +1,28 @@
+title: Gorgonzola-cream pasta
+description: creamy pasta sauce
+source: sohalt
+categories:
+  - main-course
+  - pasta
+ingredients:
+  - name: gorgonzola
+    qty: 200g
+  - name: heavy creame
+    qty: 200g
+  - name: onion
+    qty: 1 pcs
+  - name: red pepper flakes
+preparation:
+  - name: Pasta
+    prep: cook pasta in salted water, al-dente
+      
+  - name: Sauce
+    prep: |
+      Dice onions, saute in olive oil untill soft
+      Add cream, and then add gorgonzola
+      Stir until cheese is melted
+      Add red pepper flakes
+      Season with salt and pepper
+
+      
+      

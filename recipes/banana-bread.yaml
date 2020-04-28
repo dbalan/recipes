@@ -1,6 +1,7 @@
 title: Banana Bread with Walnuts
 description: Yummy banana bread
 source: https://www.chefkoch.de/rezepte/3108351463731050/Bananenbrot.html
+image: "banana-bread.png"
 categories:
   - baking
   - dessert
@@ -28,8 +29,10 @@ ingredients:
   - name: Walnuts
 
 preparation:
-  - name: main
+  - name: ""
     prep: |
-      Peel and puree the bananas or mash them with a fork. Add butter, sugar, vanilla sugar and the egg and stir with a mixer. In another bowl, mix the flour with baking powder, salt and cinnamon and sift gradually into the banana mixture. Mix everything well and stir in the walnuts with a spoon.
+      Peel and puree the bananas or mash them with a fork. Add butter, sugar, vanilla sugar and the egg and stir with a mixer.
 
-      Place the dough in a greased tin (25 or 30 cm) and bake in a preheated oven at 180 ° for about 45 minutes. Then let it cool well and remove it from the mold.
+      In another bowl, mix the flour with baking powder, salt and cinnamon and sift gradually into the banana mixture. Mix everything well and stir in the walnuts with a spoon.
+
+      Place the dough in a greased tin (25 or 30 cm) and bake in a preheated oven at 180C for about 45 minutes. Then let it cool well and remove it from the mold.
