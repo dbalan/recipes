@@ -18,7 +18,7 @@ preparation:
       
   - name: Sauce
     prep: |
-      Dice onions, saute in olive oil untill soft
+      Dice onions, saute in butter untill soft
       Add cream, and then add gorgonzola
       Stir until cheese is melted
       Add red pepper flakes
