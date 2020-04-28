@@ -17,11 +17,16 @@ library
   hs-source-dirs:      src
   ghc-options:         -Wall
   exposed-modules:     Recipes.Types
+                     , Recipes.Compiler
+                     , Recipes.RecipeCompiler
   build-depends:       base >= 4.7 && < 5
                      , text
                      , yaml
+                     , utf8-string
                      , bytestring
-                     , hakyll                     
+                     , hakyll
+                     , filepath
+                     , interpolate
   default-language:    Haskell2010
 
 executable recipes-exe

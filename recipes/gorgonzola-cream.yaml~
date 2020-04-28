@@ -1,0 +1,25 @@
+title: Gorgonzola-cream pasta sauce
+description: creamy pasta sauce
+source: sohalt
+categories:
+  - main-course
+  - pasta
+ingredients:
+  - name: gorgonzola
+    qty: 200g
+  - name: heavy creame
+    qty: 200g
+  - name: onion
+    qty: 1 pcs
+  - name: red pepper flakes
+preparation:
+  - name: making sauce
+    prep:
+      - dice onions, saute in olive oil untill soft
+      - add cream, and then add gorgonzola
+      - stir until cheese is melted
+      - add red pepper flakes
+      - season with salt and pepper
+
+      
+      
