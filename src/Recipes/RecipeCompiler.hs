@@ -42,8 +42,7 @@ optionalField k v = case v of
   Just s  -> constField k s
 
 renderBody :: Recipe -> String
-renderBody r =
-  [i|<h2>Ingredients</h2>
+renderBody r = [i|<h2>Ingredients</h2>
     <table>
     #{renderIngredients r}
     </table>
