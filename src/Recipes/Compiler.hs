@@ -5,7 +5,6 @@ module Recipes.Compiler
 where
 
 import Hakyll
-import Hakyll.Core.Identifier (toFilePath)
 import System.FilePath
 
 import Recipes.RecipeCompiler

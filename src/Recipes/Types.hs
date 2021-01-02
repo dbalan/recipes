@@ -70,4 +70,3 @@ instance Render Instruction where
        #{s}\n|]
       where
         s = concat $ map (("<p>"<>).camelCase) (lines (steps ins))
-

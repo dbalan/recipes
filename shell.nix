@@ -1,5 +1,5 @@
 { pkgs ? import <nixpkgs> {}
-, ghc ? "ghc865"
+, ghc ? "ghc884"
 }:
 
 pkgs.stdenv.mkDerivation rec {
@@ -14,6 +14,7 @@ pkgs.stdenv.mkDerivation rec {
     pkgs.haskell.compiler.${ghc}
     pkgs.cabal-install
     pkgs.haskellPackages.ghcid
+    pkgs.haskellPackages.cabal-plan
   ];
 
   shellHook = ''
