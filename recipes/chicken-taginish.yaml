@@ -1,0 +1,51 @@
+title: Chicken Tagine-ish
+description: This is definitely inspired by a tagine flavor profile but I am not sure if I can call it one.
+source: various
+categories:
+  - main-course
+  - rice
+image: "chicken-taginish.png"
+ingredients:
+  - name: chicken thighs (or any dark parts, bone in)
+    qty: 1 kg
+  - name: cayenne
+    qty: 2 tsp
+  - name: coriander powder
+    qty: 1 tbsp
+  - name: turmeric
+    qty: 1 tsp
+  - name: olive oil
+    qty: 40 ml
+  - name: garlic
+    qty: 5 cloves
+    prep: crushed
+  - name: parsley
+    prep: chopped fine
+  - name: cilantro
+    prep: chopped fine
+  - name: ginger
+    qty: 2 cm
+    prep: crush
+  - name: onions
+    qty: 2 pcs
+    prep: sliced medium
+  - name: lemon (preserved if you can find it)
+    qty: 2 pcs
+    prep: zest, also extract pulp and chop fine
+  - name: calamata olives
+    qty: 8 pcs
+  - name: carrots (or any other root veggies)
+    
+preparation:
+  - name: Marinade
+    prep: |
+      Mix cayenne, coriander, pulp of lemon, lemon juice, zest, olive oil, cilantro, parsley, ginger and garlic well. Rub onto the chicken. Refrigerate for at least an hour.
+      
+  - name: main
+    prep: |
+      Heat oil in a heavy skillet/pan. Brown the chicken skin side down.
+
+      Remove the chicken and add onions to the skillet and brown them. Add chicken, any veggies you want to add, oilves and the marinade left to the pot. Cook until the chicken is tender.
+
+      Add some chopped cilantro and serve hot.
+      
