@@ -27,7 +27,7 @@ startApp = hakyllWith config $ do
     route idRoute
     compile copyFileCompiler
 
-  match "recipes/*.yaml" $ do
+  match ("recipes/*.yaml" .||. "recipes/*.yml") $ do
     route recipeRoute
     compile recipeCompiler
 
