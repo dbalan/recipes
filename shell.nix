@@ -1,5 +1,4 @@
-{ pkgs ? import <nixpkgs> {}
-, ghc ? "ghc884"
+{ pkgs ? import <unstable> {}
 }:
 
 pkgs.stdenv.mkDerivation rec {
@@ -11,7 +10,8 @@ pkgs.stdenv.mkDerivation rec {
 
   buildInputs = [
     pkgs.zlib
-    pkgs.haskell.compiler.${ghc}
+    pkgs.haskell-language-server
+    # pkgs.haskell.compiler.${ghc}
     pkgs.cabal-install
     pkgs.haskellPackages.ghcid
     pkgs.haskellPackages.cabal-plan
