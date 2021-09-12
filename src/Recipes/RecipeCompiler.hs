@@ -29,7 +29,7 @@ parseRecipe :: String -> Either ParseException Recipe
 parseRecipe s = decodeEither' (fromString s)
 
 fromRecipe :: Recipe -> Context String
-fromRecipe r = optionalField "notes" (notes r)
+fromRecipe r = optionalField "notes" (renderNotes r)
                <> optionalField "image" (image r)
                <> constField "title" (title r)
                <> constField "source" (source r)
@@ -40,6 +40,13 @@ optionalField :: String -> Maybe String -> Context String
 optionalField k v = case v of
   Nothing -> mempty
   Just s  -> constField k s
+
+renderNotes :: Recipe -> Maybe String
+renderNotes r = fmap (concatMap renderNote) (notes r)
+  where
+    renderNote :: String -> String
+    renderNote nt = [i|<li>#{nt}</li>
+                      |]
 
 renderBody :: Recipe -> String
 renderBody r = [i|<h2>Ingredients</h2>

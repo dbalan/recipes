@@ -17,7 +17,7 @@ data Recipe = Recipe
   , ingredients :: ![RecipeIngredient]
   , categories :: ![String]
   , instructions :: ![Instruction]
-  , notes :: Maybe String } deriving (Show, Eq)
+  , notes :: Maybe [String] } deriving (Show, Eq)
 
 data RecipeIngredient = RecipeIngredient
   { name :: String

@@ -6,13 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Recipes</title>
-    <link rel="stylesheet" href="/css/default.css" />
+    <link rel="stylesheet" href="/css/tufte.css" />
   </head>
   <body>
-    <h1>Recipes</h1>
+    <header>
+      <h3><a href="/">home</a></h3>
+    </header>
+    <article>
+    <h1>dbalan's bytes</h1>
+    <p class="subtitle">the IRL kind..</p>
+    <section>
     <ul>
      $for(posts)$
       <li><a href="/recipes/$title$.html">$title$</a></li>
-    $endfor$
+      $endfor$
+    </ul>
+    </section>
+    </article>
 </html>
 

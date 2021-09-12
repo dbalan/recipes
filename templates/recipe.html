@@ -6,24 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>$title$</title>
-    <link rel="stylesheet" href="/css/default.css" />
+    <link rel="stylesheet" href="/css/tufte.css" />
   </head>
   <body>
-    <h1>$title$</h1>
-       $if(categories)$
+    <header>
+      <h3><a href="/">home</a></h3>
+    </header>
+
+    <article>
+      <h1>$title$</h1>
+
+      $if(categories)$
     <div id="tags">Posted in $tags$</div>
     $endif$
-    $desc$
+    <p class="subtitle">
+      $desc$
+    </p>
     <br>
-    source: <a href=$source$>$source$</a></div>
-    <br>
+    <section>
+      source: <a href=$source$>$source$</a></div>
+<br>
+</section>
+
     $if(image)$
-    <div id="picture"><img src="/pictures/$image$" style="width:auto;"></div>
+<section>
+  <div id="picture"><img src="/pictures/$image$" style="width:auto;"></div>
     $endif$
+  <section>
     $body$
     $if(notes)$
-    <h2>Notes</h2>
-    $notes$
+    <section>
+      <h2>Notes</h2>
+    <ol>
+      $notes$
+    </ol>
     $endif$
 </html>
 
