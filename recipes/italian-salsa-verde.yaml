@@ -1,0 +1,41 @@
+title: Salsa Verde (Italian)
+description: Versatile fresh herb green sauce
+source: "Antonella"
+image: "salsa-verde-it.png"
+categories:
+  - condiment
+
+ingredients:
+  - name: Basil
+    qty: 40g
+  - name: Flat Leaf parsley
+    qty: 40g
+  - name: Capers
+    qty: 2 tbsp
+    prep: Salted
+  - name: Egg
+    qty: 1 pcs
+    prep: hard-boiled
+  - name: Canned anchovies
+    qty: as-needed
+  - name: Gherkin
+    qty: as-needed
+  - name: Baking Powder
+    qty: 6 g
+  - name: Lemon
+    qty: 1 pcs
+  - name: Garlic
+    qty: 4 cloves
+  - name: Olive Oil
+    qty: as-needed
+  - name: Red-wine vinegar
+    qty: 2 tsp
+  - name: Green pepper
+    qty: as-needed
+  - name: Red pepper flakes
+    
+preparation:
+  - name: ""
+    prep: |
+      Mix everything except olive oil on a food processor, blitz to a rough texture. Add olive oil to the mix, emulsify.
+
