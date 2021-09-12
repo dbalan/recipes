@@ -1,0 +1,59 @@
+title: Sheet Pan Bibimbap
+description: Bibimbap using sheet pan in an oven.
+source: https://cooking.nytimes.com/recipes/1022131-sheet-pan-bibimbap
+categories:
+  - meal
+  - oven
+ingredients:
+  - name: Rice (or replace with grain of your choice)
+    qty: As-needed
+  - name: Egg
+    qty: 1 per-serving
+  - name: Meat (Your choice of protine)
+    qty: As-needed
+  - name: Vegetables
+    prep: sliced not too thick.
+    qty: As-needed
+  - name: Gochujang
+    qty: 4 tbsp
+  - name: Sesame Oil
+    qty: 2 tbsp
+  - name: Soy sauce
+    qty: 2 tbsp
+  - name: Toasted Sesame Seeds
+    qty: 2 tbsp
+  - name: Hot sauce
+    qty: As-needed
+  - name: Honey / Sugar
+    qty: As needed
+
+preparation:
+  - name: "Vegetables"
+    prep: |
+      Arrange vegetables on the sheet pan, each vegetable in their own section. Make sure not to layer them, as this will prevent proper caramelization.
+
+      Drizzle olive oil, salt and pepper, may be bit of MSG if you are being adventurous.
+
+  - name: "Meat/Protine"
+    prep: |
+      I usually stir fry them, seasoning accordingly
+
+  - name: "Rice and eggs"
+    prep: |
+      Make rice. Drizzle olive oil on a second sheet pan, spread rice over half. Crack egg on the other half. Cook ~5 minutes in the oven.
+
+      Make sure not to over cook the eggs. We are looking for a very runny yolk consistency.
+
+  - name: "Sauce"
+    prep: |
+      Mix gochujang, soy sauce, honey, hot sauce, sesame oil and sesame seeds in a bowl very well.
+
+  - name: "Serving"
+    prep: |
+      Add rice to the bowl, add vegetables as neat pile on top, and same with meat. Cover with the egg, and add Sauce as needed.
+      Mix very well with a chop-stick / spoon before digging in.
+
+notes:
+  - Vegetables with lower moisture content can be piled a bit.
+  - I tried replacing rice with Buckwheat which turned out well.
+  - Replaced meat with de-cased Italian sausage, was meh.
