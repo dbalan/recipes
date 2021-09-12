@@ -1,13 +1,16 @@
 {-# LANGUAGE OverloadedStrings #-}
+
 module Recipes.Compiler
   ( startApp
   )
 where
 
-import Hakyll
-import System.FilePath
+import qualified Data.Text as T
+import           Data.Text.Titlecase
+import           Hakyll
+import           System.FilePath
 
-import Recipes.RecipeCompiler
+import           Recipes.RecipeCompiler
 
 config :: Configuration
 config = defaultConfiguration
@@ -20,6 +23,17 @@ recipeRoute = customRoute rr
   where
     rr :: Identifier -> FilePath
     rr p = (toFilePath p) -<.> ".html"
+
+prettyTitle :: String -> String
+prettyTitle s = titlecase $ T.unpack (T.replace "-" " " (T.pack s))
+
+pstCtx :: Context String
+pstCtx = mconcat
+  [ Context (\key -> case key of
+      "title" -> unContext (mapContext (escapeHtml . prettyTitle) defaultContext) key
+      _       -> unContext mempty key)
+  , defaultContext ]
+
 
 startApp :: IO ()
 startApp = hakyllWith config $ do
@@ -41,7 +55,7 @@ startApp = hakyllWith config $ do
     compile $ do
       posts <- loadAll "recipes/*"
       let indexCtx =
-            listField "posts" defaultContext (return posts) <> defaultContext
+            listField "posts" pstCtx (return posts) <> defaultContext
       makeItem ""
         >>= loadAndApplyTemplate "templates/index.html" indexCtx
         >>= relativizeUrls

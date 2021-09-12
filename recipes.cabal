@@ -22,6 +22,7 @@ library
                      , Recipes.Utils
   build-depends:       base >= 4.13 && < 5
                      , text
+                     , titlecase
                      , yaml
                      , utf8-string
                      , bytestring
