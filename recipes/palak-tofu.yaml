@@ -1,0 +1,56 @@
+title: Palak Panneer/Tofu
+description: Classic Indian dish with loads of spinach, garlic, tofu/panneer and taste.
+source: https://github.com/lispyclouds
+image: "palak-tofu.jpg"
+categories:
+  - main-course
+  - rice
+  - roti
+  - indian
+ingredients:
+  - name: "Plain medium, not firm Tofu(Vegan) or Panneer. Recommended: https://shop.rewe.de/p/rewe-bio-tofu-natur-mild-200g/8388625"
+    qty: 500 gm
+    prep: chopped into blocks
+  - name: "Spinach boiled and finely chopped into a paste, fresh or frozen, Recommended: https://shop.rewe.de/p/iglo-wuerzspinat-mit-zwiebeln-500g/951482"
+    qty: 500 gm
+  - name: Red chili powder
+    qty: 1 tbsp
+  - name: Salt
+    qty: to taste
+  - name: Turmeric
+    qty: 1 tbsp
+  - name: Mustard/Olive/Sunflower Oil. Mustard recommended.
+    qty: 40 ml
+  - name: Garam masala
+    qty: 1 tbsp
+  - name: Garlic
+    qty: ~15 cloves
+    prep: crushed
+  - name: Oyster Mushrooms
+    qty: 100 gm
+    prep: diced long
+  - name: Red onions
+    qty: 2 small whole or one large
+    prep: sliced long
+  - name: Yoghurt, vegan or otherwise
+    qty: 100 ml
+  - name: Green chillies
+    qty: 2-3
+    prep: chopped
+
+preparation:
+  - name: main
+    prep: |
+      Serves 4.
+
+      Heat oil in a heavy skillet/pan. Saute the onions and garlic on medium/high heat till a bit brown.
+
+      Add the tofu in it, sprinkle salt, turmeric, red chilli powder and fry till the tofus have started to turn brown and the spices have seeped in.
+
+      Add the mushrooms, green chillies and the garam masala and fry for a bit more, till the mushrooms have reduced a bit. Add more oil if needed.
+
+      Add the yoghurt and mix it all well till a semi solid paste is formed.
+
+      Finally add the spinach and some water to form a thick green gravy. Do the taste test and see what could be adjusted.
+
+      Serve hot with either plain white basmati or parboiled rice or rotis or large toasted tortillas.
