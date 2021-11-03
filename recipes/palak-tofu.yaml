@@ -8,11 +8,12 @@ categories:
   - roti
   - indian
 ingredients:
-  - name: "Plain medium, not firm Tofu(Vegan) or Panneer. Recommended: https://shop.rewe.de/p/rewe-bio-tofu-natur-mild-200g/8388625"
+  - name: "Tofu"
     qty: 500 gm
-    prep: chopped into blocks
-  - name: "Spinach boiled and finely chopped into a paste, fresh or frozen, Recommended: https://shop.rewe.de/p/iglo-wuerzspinat-mit-zwiebeln-500g/951482"
+    prep: "Plain medium firm tofu, chopped into blocks"
+  - name: Spinach
     qty: 500 gm
+    prep: boiled and finely chopped into a paste.
   - name: Red chili powder
     qty: 1 tbsp
   - name: Salt
@@ -39,10 +40,8 @@ ingredients:
     prep: chopped
 
 preparation:
-  - name: main
+  - name: ""
     prep: |
-      Serves 4.
-
       Heat oil in a heavy skillet/pan. Saute the onions and garlic on medium/high heat till a bit brown.
 
       Add the tofu in it, sprinkle salt, turmeric, red chilli powder and fry till the tofus have started to turn brown and the spices have seeped in.
@@ -54,3 +53,6 @@ preparation:
       Finally add the spinach and some water to form a thick green gravy. Do the taste test and see what could be adjusted.
 
       Serve hot with either plain white basmati or parboiled rice or rotis or large toasted tortillas.
+
+notes:
+  - Recommended <a href="https://shop.rewe.de/p/rewe-bio-tofu-natur-mild-200g/8388625">tofu</a> and <a href="https://shop.rewe.de/p/iglo-wuerzspinat-mit-zwiebeln-500g/951482">spinach</a>
