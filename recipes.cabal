@@ -20,13 +20,13 @@ library
                      , Recipes.Compiler
                      , Recipes.RecipeCompiler
                      , Recipes.Utils
-  build-depends:       base >= 4.13 && < 5
+  build-depends:       base
                      , text
                      , titlecase
                      , yaml
                      , utf8-string
                      , bytestring
-                     , hakyll >= 4.13.0.0 && < 4.14
+                     , hakyll
                      , filepath
                      , interpolate
 
