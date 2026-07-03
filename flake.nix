@@ -6,15 +6,22 @@
     flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, flake-utils }:
-    flake-utils.lib.eachDefaultSystem (system:
+  outputs =
+    {
+      self,
+      nixpkgs,
+      flake-utils,
+    }:
+    flake-utils.lib.eachDefaultSystem (
+      system:
       let
         pkgs = nixpkgs.legacyPackages.${system};
 
         haskellPackages = pkgs.haskellPackages;
 
         builder = pkgs.haskellPackages.callCabal2nix "recipes-exe" ./. { };
-      in {
+      in
+      {
 
         packages.default = self.packages.${system}.website;
         defaultPackage = self.packages.${system}.default;
@@ -46,10 +53,10 @@
             haskellPackages.haskell-language-server # you must build it with your ghc to work
             ghcid
             cabal-install
+            builder
           ];
-          inputsFrom =
-            map (__getAttr "env") (__attrValues self.packages.${system});
         };
         devShell = self.devShells.${system}.default;
-      });
+      }
+    );
 }
